@@ -35,3 +35,30 @@
     width: 100%;
     height: 600px;
 }
+.slider{
+    position: relative; /*respete la posicion del div*/
+    width: 100%; /*ancho*/
+    height: 100%; /*alto*/
+    display: flex; /*imagenes en fila */
+    overflow-x: auto; /* corte la imagen */
+    scroll-snap-type: x mandatory; /*salga el scroll en eje X*/
+}
+.slide {
+    flex: none; /* las imagenes no cambien de posicion */
+    scroll-snap-align: start; /*el scroll empiece a la izq*/
+    width: 100%; /*ancho del slider*/
+    height: 100%; /*alto del slider*/
+    display: flex; /*imagenes se mantengan en fila*/
+    justify-content: center; /* imagenes en el centro Horizontalmente*/
+    align-items: center; /*imagenes en el centro verticalmente*/
+}
+.slide img{
+    width: 100%; /*ancho del slider*/
+    height: auto; /*alto del slider*/
+}
+/* Sesion personajes */
+#personajes{
+    width: 100%;
+    height: 700px;
+    background-color: gainsboro;
+}
